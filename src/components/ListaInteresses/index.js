@@ -16,7 +16,7 @@ import {
   ListSelected,
 } from './styles';
 
-export default function ListaInteresses({ navigation }) {
+export default function ListaInteresses({ navigation , tipo }) {
   const responseData = [
     {
       id: 1,
@@ -74,7 +74,6 @@ export default function ListaInteresses({ navigation }) {
       selected: false
     }
   ];
-
 
   const [items, setItems] = useState([]);
 

@@ -19,16 +19,15 @@ import {
   List
 } from './styles';
 
-
-export default function Interesses({ navigation }) {
+export default function OqueFaz({ navigation }) {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Container>
-        <HeaderBar width={66.7} step={1} max={3} navigation={navigation} />
+        <HeaderBar width={100} step={1} max={3} navigation={navigation} />
         <Content>
           <Title>
-            Principais{'\n'}
-            Interesses
+            O que você gosta{'\nb'}
+            de fazer no dia-a-dia?  
           </Title>
           <Description>Escolha até quatro opções.</Description>
           <Button onPress={() => navigation.navigate('ListaInteressesModal')}>
@@ -40,21 +39,17 @@ export default function Interesses({ navigation }) {
 
           <List>
             <Selected>
-              <SelectedText>Criar histórias</SelectedText> 
+              <SelectedText>Gravar vídeos para internet</SelectedText> 
               <ButtonIcon><FontAwesomeIcon icon={faTrashAlt} color="#6C6C6C" /></ButtonIcon>
             </Selected>
             <Selected>
-              <SelectedText>Ler e escrever</SelectedText> 
-              <ButtonIcon><FontAwesomeIcon icon={faTrashAlt} color="#6C6C6C" /></ButtonIcon>
-            </Selected>
-            <Selected>
-              <SelectedText>Pesquisar sobre músicas</SelectedText>
+              <SelectedText>Tocar um instrumento musical</SelectedText> 
               <ButtonIcon><FontAwesomeIcon icon={faTrashAlt} color="#6C6C6C" /></ButtonIcon>
             </Selected>
           </List>
         </Content>
         
-        <Button bottom center blue onPress={() => navigation.navigate('OqueFazScreen')}>
+        <Button bottom center blue onPress={() => navigation.navigate('SugestaoPerfilScreen')}>
           <ButtonText center blue>Continuar</ButtonText>
         </Button>
       </Container>

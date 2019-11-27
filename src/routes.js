@@ -10,15 +10,18 @@ import IntroducaoScreen from './screen/Introducao';
 import LoginScreen from './screen/Login';
 import BoasVindasScreen from './screen/BoasVindas';
 import OqueGostaScreen from './screen/OqueGosta';
+import OqueFazScreen from './screen/OqueFaz';
 import InteressesScreen from './screen/Interesses';
 import SugestaoPerfilScreen from './screen/SugestaoPerfil';
 import AplicacoesScreen from './screen/Aplicacoes';
+import InicioScreen from './screen/Inicio';
 import TrilhaScreen from './screen/Trilha';
 
 import ListaInteressesModal from './components/ListaInteresses';
 
 const AuthNavigator = createStackNavigator(
   {
+    SugestaoPerfilScreen,
     IntroducaoScreen,
     LoginScreen
   },
@@ -46,10 +49,12 @@ const MainStackNavigator = createStackNavigator(
     BoasVindasScreen,
     OqueGostaScreen,
     InteressesScreen,
+    OqueFazScreen,
     SugestaoPerfilScreen,
+    InicioScreen,
     AplicacoesScreen,
     TrilhaScreen,
-    ListaInteressesModal
+    ListaInteressesModal,
   },
   {
     headerMode: 'none',
