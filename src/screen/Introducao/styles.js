@@ -24,7 +24,7 @@ export const Content = styled.View`
 export const Button = styled.TouchableOpacity`
   background: ${props => props.white ? colors.white : colors.blue};
   padding: 15px 0;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 10px 0px;
   align-items: center;
   box-shadow: 0px 3px 3px #ccc;

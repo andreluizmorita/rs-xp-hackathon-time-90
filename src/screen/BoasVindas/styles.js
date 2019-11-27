@@ -23,7 +23,7 @@ export const Button = styled.TouchableOpacity`
   background: ${colors.blue};
   width: 100%;
   padding: 15px 0;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0px 3px 3px #ccc;
   margin-top: auto;
 `;

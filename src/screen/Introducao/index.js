@@ -10,17 +10,11 @@ import slide1 from '../../assets/images/image_4.png';
 import slide2 from '../../assets/images/image_2.png';
 
 export default function Introducao({ navigation }) {
-
-  useEffect(() => {
-    console.log(navigation)
-  }, []);
-
   function handleLogin() {
     /* TODO:
       - Login Facebook
       - Login Google
     */
-    console.log(navigation);
     navigation.navigate('BoasVindasScreen');
   }
 

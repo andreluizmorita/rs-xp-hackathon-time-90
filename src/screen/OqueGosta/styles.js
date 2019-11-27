@@ -35,6 +35,8 @@ export const Option = styled.View`
   top: ${props => props.item * 140}px;
 `;
 
+export const OptionButton = styled.TouchableOpacity``;
+
 export const OptionImage = styled.Image`
   width: 220px;
   flex-direction: row;

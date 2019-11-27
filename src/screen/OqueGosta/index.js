@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 
 import HeaderBar from '../../components/HeaderBar';
 
-import { Container, Content, Title, Description, Options, Option, OptionText, OptionImage } from './styles';
+import { Container, Content, Title, Description, Options, Option, OptionButton, OptionText, OptionImage } from './styles';
 
 import filmes from '../../assets/images/filmes.png';
 import compras from '../../assets/images/compras.png';
@@ -23,25 +23,27 @@ export default function Interesses({ navigation }) {
         </Title>
         <Description>Escolha uma das opções abaixo.</Description>
         <Options>
-          <Option item={0}>
-            <OptionImage source={compras} />
-            <OptionText>Compras</OptionText>
-          </Option>
+          <OptionButton onPress={() => navigation.navigate('InteressesScreen')}>
+            <Option item={0}>
+              <OptionImage source={compras} />
+              <OptionText>Compras</OptionText>
+            </Option>
 
-          <Option item={1} right>
-            <OptionText>Jogos</OptionText>
-            <OptionImage source={jogos} />
-          </Option>
+            <Option item={1} right>
+              <OptionText>Jogos</OptionText>
+              <OptionImage source={jogos} />
+            </Option>
 
-          <Option item={2}>
-            <OptionImage source={filmes} />
-            <OptionText>Filmes</OptionText>
-          </Option>
+            <Option item={2}>
+              <OptionImage source={filmes} />
+              <OptionText>Filmes</OptionText>
+            </Option>
 
-          <Option item={3} right>
-            <OptionImage source={redesSociais} />
-            <OptionText>Redes sociais</OptionText>
-          </Option>
+            <Option item={3} right>
+              <OptionImage source={redesSociais} />
+              <OptionText>Redes sociais</OptionText>
+            </Option>
+          </OptionButton>
         </Options>
       </Content>
       

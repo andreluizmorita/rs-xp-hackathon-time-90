@@ -5,7 +5,18 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import HeaderBar from '../../components/HeaderBar';
 
-import { Container, Content, Title, Description, Button, ButtonText, ButtonIcon } from './styles';
+import { 
+  Container,
+  Content,
+  Title,
+  Description,
+  Button,
+  ButtonText,
+  ButtonIcon,
+  Selected,
+  SelectedText, 
+  List
+} from './styles';
 
 
 export default function Interesses({ navigation }) {
@@ -19,14 +30,32 @@ export default function Interesses({ navigation }) {
             Interesses
           </Title>
           <Description>Escolha até quatro opções.</Description>
-          <Button>
+          <Button onPress={() => navigation.navigate('ListaInteressesModal')}>
             <ButtonText>Escolha as opções</ButtonText>
             <ButtonIcon>
               <FontAwesomeIcon icon={faPlus} color="#89C4F4" />
             </ButtonIcon>
           </Button>
-        </Content>
 
+          <List>
+            <Selected>
+              <SelectedText>Criar histórias</SelectedText> 
+              <ButtonIcon><FontAwesomeIcon icon={faPlus} color="#6C6C6C" /></ButtonIcon>
+            </Selected>
+            <Selected>
+              <SelectedText>Ler e escrever</SelectedText> 
+              <ButtonIcon><FontAwesomeIcon icon={faPlus} color="#6C6C6C" /></ButtonIcon>
+            </Selected>
+            <Selected>
+              <SelectedText>Pesquisar sobre músicas</SelectedText>
+              <ButtonIcon><FontAwesomeIcon icon={faPlus} color="#6C6C6C" /></ButtonIcon>
+            </Selected>
+          </List>
+        </Content>
+        
+        <Button bottom center blue onPress={() => {}}>
+          <ButtonText center blue>Continuar</ButtonText>
+        </Button>
       </Container>
       
       

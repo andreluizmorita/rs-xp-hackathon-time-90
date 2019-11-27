@@ -9,5 +9,8 @@ export default {
   backgroundContent: '#FFFFFF',
 
   grayRegular: '#7E8494',
+  grayMedium: '#6C6C6C',
+  grayLight2: '#EDF2FF',
+  grayLight1: '#C6C6C6',
   grayLight: '#DAE0F0',
 };
