@@ -21,7 +21,6 @@ import ListaInteressesModal from './components/ListaInteresses';
 
 const AuthNavigator = createStackNavigator(
   {
-    SugestaoPerfilScreen,
     IntroducaoScreen,
     LoginScreen
   },
